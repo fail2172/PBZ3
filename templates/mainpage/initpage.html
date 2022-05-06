@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+	<title>Редактор Онтологий</title>
+</head>
+<body>
+	<div class="open">
+		    <form method=POST action="" class="form-container" enctype="multipart/form-data">
+		    	{% csrf_token %}
+			        {{ open_form.as_p }} 
+			        <button type="submit" class="create-choice-button">Open</button>
+		    </form>
+	</div>
+	<div class="header_choice">
+		<h1>OR</h1>
+	</div>
+	<div class="create">
+		<form method=POST action="">
+		    	{% csrf_token %}
+			        {{ create_ontology_form }}
+			        <button type="submit" class="create-choice-button">Create ontology</button>
+		</form>
+	</div>
+
+</body>
+</html>
+
+<style type="text/css">
+	
+.open {
+  display: inline-block;
+  position: fixed;
+  background: white;
+  border: 2px solid #ccc;
+  bottom: 450px;
+  right: 550px;
+  z-index: 1;
+  border-radius: 5px;
+}
+.header_choice {
+  display: inline-block;
+  position: fixed;
+  bottom: 320px;
+  right: 700px;
+  color: white;
+}
+.create {
+  display: inline-block;
+  position: fixed;
+  background: white;
+  border: 2px solid #ccc;
+  bottom: 250px;
+  right: 550px;
+  z-index:1;
+  border-radius: 5px;
+}
+
+</style>
+
+

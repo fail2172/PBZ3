@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body{
+  font-family: 'Poppins';
+  margin: 0;
+  background: linear-gradient(to top, #000000, #434343);
+  background-size: 100% 100%;
+  background-attachment: fixed; 
+}
+
+.openSOC-button {
+  display: inline-flex;
+  margin: 1px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  line-height: 5px;
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  cursor: pointer;
+  border: 2px solid #BFE2FF;
+  overflow: hidden;
+  z-index: 1;
+}
+.openSOC-button:hover,
+.openSOC-button:active,
+.openSOC-button:focus {
+  color: white;
+}
+.openSOC-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #2D6B9F;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+.openSOC-button:hover:before,
+.openSOC-button:active:before,
+.openSOC-button:focus:before {
+  transform: translateX(0);
+}
+
+.create-choice-button {
+  display: inline-flex;
+  margin: 1px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  line-height: 5px;
+  padding: 5px 10px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  cursor: pointer;
+  border: 2px solid #BFE2FF;
+  overflow: hidden;
+  z-index: 1;
+}
+.create-choice-button:hover,
+.create-choice-button:active,
+.create-choice-button:focus {
+  color: white;
+}
+.create-choice-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #2D6B9F;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+.create-choice-button:hover:before,
+.create-choice-button:active:before,
+.create-choice-button:focus:before {
+  transform: translateX(0);
+}
+
+
+.open-button {
+  display: inline-flex;
+  margin: 1px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  line-height: 5px;
+  padding: 5px 5px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  cursor: pointer;
+  border: 2px solid #BFE2FF;
+  overflow: hidden;
+  z-index: 1;
+}
+.open-button:hover,
+.open-button:active,
+.open-button:focus {
+  color: white;
+}
+.open-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #2D6B9F;
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+.open-button:hover:before,
+.open-button:active:before,
+.open-button:focus:before {
+  transform: translateX(0);
+}
+
+.del_button {
+  display: inline-flex;
+  margin: 1px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  line-height: 5px;
+  padding: 5px 5px;
+  color: black;
+  font-weight: bold;
+  background: red;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: 2px solid #BFE2FF;
+  overflow: hidden;
+  z-index: 1;
+}
+.del_button:hover,
+.del_button:active,
+.del_button:focus {
+  color: white;
+}
+
+.del_button:hover:before,
+.del_button:active:before,
+.del_button:focus:before {
+  transform: translateX(0);
+}
+
+.btn_cancel{ 
+  display: inline-flex;
+  margin: 1px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  line-height: 5px;
+  padding: 5px 5px;
+  color: black;
+  font-weight: bold;
+  background: red;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: 2px solid #BFE2FF;
+  overflow: hidden;
+} 
+
+.btn_cancel:hover,
+.btn_cancel:active,
+.btn_cancel:focus {
+  color: white;
+}
+
+.btn_cancel:hover:before,
+.btn_cancel:active:before,
+.btn_cancel:focus:before {
+  transform: translateX(0);
+}
+
+
+input[type=submit] {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  outline: none;
+  padding: 5px 5px;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+
+input[type=submit] :hover { 
+  background: rgba(255,255,255,.2); 
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+.del_form {
+  display: none;
+
+  background: white;
+  border: 2px solid #ccc;
+
+
+  border-radius: 5px;
+}
+
+.form-popup {
+  display: none;
+
+  background: white;
+  border: 2px solid #ccc;
+
+
+  border-radius: 5px;
+}
+
+
+
+.relation {
+	border: 2px solid #ccc;
+  padding: 10px;
+}
+
+
+
+.new_ontology{
+	float: right;
+}
+
+.errorlist{
+  display: none;
+}
+
+.ontology_buttons{
+  display: block;
+}
+
+.right_content{
+  display: inline-block;
+  float: right;
+  line-height: normal;
+  border: 2px solid #ccc;
+  width: 53%;
+  height: 90%;
+}
+
+
+.treeHTML {
+  display: inline-block;
+  line-height: normal;
+  border: 2px solid #ccc;
+  width: 45%;
+}
+.treeHTML details {
+  display: block;
+}
+.treeHTML div {
+  position: relative;
+  margin: 0 0 0 .5em;
+  padding: 0 0 0 1.2em;
+}
+.treeHTML div:not(:last-child) { 
+  border-left: 1px solid #ccc;
+}
+.treeHTML div:before { 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.1em;
+  height: .5em;
+  border-bottom: 1px solid #ccc;
+}
+.treeHTML div:last-child:before { 
+  border-left: 1px solid #ccc;
+}
+.treeHTML summary { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.treeHTML details[open] summary {} 
+
+.tabs { width: 97%; padding: 0px; margin: 0 auto; }
+.tabs>input { display: none; }
+
+.tabs>div {
+  display: none;
+  padding: 12px;
+  border: 1px solid #C0C0C0;
+  background: #FFFFFF;
+  z-index:1;
+}
+.tabs>label {
+  display: inline-block;
+  padding: 7px;
+  margin: 0 -5px -1px 0;
+  text-align: center;
+  color: #666666;
+  border: 1px solid #C0C0C0;
+  background: #E0E0E0;
+  cursor: pointer;
+}
+
+.tabs>input:checked + label {
+  color: #000000;
+  border: 1px solid #C0C0C0;
+  border-bottom: 1px solid #FFFFFF;
+  background: #FFFFFF;
+}
+
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4
+{ display: block; }
